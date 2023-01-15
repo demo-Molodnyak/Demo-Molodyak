@@ -1,0 +1,125 @@
+#flexbox {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: row;
+}
+
+#flexbox .item {
+  flex: 1 0 auto;
+  background: none;
+  margin: 6px;
+  /*background-color: darkred*/;
+}
+
+#flexbox1 {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+}
+
+#flexbox2 {
+  display: flex;
+  align-items: center;
+}
+
+/* Вызывающая кнопка */
+.it_btn1 {
+  background-color: #4B4B4B;
+  color: #C0C0C0;
+  height: 38.4px;
+  width: 100px;
+  padding: 7px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  text-align: center;
+}
+
+.it_btn2 {
+  background-color: #4B4B4B;
+  color: #C0C0C0;
+  height: 38.4px;
+  width: 100px;
+  padding: 7px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  text-align: center;
+}
+
+.it_btn3 {
+  background-color: #4B4B4B;
+  color: #C0C0C0;
+  height: 38.4px;
+  width: 100px;
+  padding: 7px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  text-align: center;
+}
+
+.it_btn4 {
+  background-color: #4B4B4B;
+  color: #C0C0C0;
+  height: 38.4px;
+  width: 120px;
+  padding: 7px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  text-align: center;
+}
+
+/* Контейнер <div> - нужен для позиционирования выпадающего контента */
+.it_dropdown {
+  position: absolute;
+  display: inline-block;
+}
+
+/* Выпадающий контент (по умолчанию скрыт) */
+.it_dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  z-index: 1;
+}
+
+/* Ссылки внутри выпадающего блока */
+.it_dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Изменяем цвет ссылки при наведении */
+.it_dropdown-content a:hover {background-color: #ddd}
+
+/* Показываем выпадающий блок при наведении */
+.it_dropdown:hover .it_dropdown-content {
+  display: block;
+}
+
+/* Изменяем фоновый цвет вызывающей кнопки при выводе выпадающего блока */
+.it_btn1:hover, .it_btn2:hover, .it_btn3:hover, .it_btn4:hover, .it_dropdown:hover {
+  background-color: dimgray;
+}
+
+.{
+width: 50px;
+height: 10px;
+}
+
+
+.bit_btn {
+  width: auto;
+  margin: 0;
+  border: none;
+  outline: none;
+}
